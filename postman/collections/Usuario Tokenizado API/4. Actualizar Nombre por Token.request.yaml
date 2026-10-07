@@ -1,0 +1,15 @@
+$kind: http-request
+description: Actualiza el nombre del usuario validando únicamente su token activo.
+url: "{{base_url}}/api/users/name"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: json
+  content: |-
+    {
+      "token": "TU_TOKEN_GENERADO_EN_LOGIN",
+      "name": "Nuevo Nombre de Usuario"
+    }
+order: 4000

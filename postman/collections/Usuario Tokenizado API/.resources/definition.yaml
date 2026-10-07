@@ -1,0 +1,4 @@
+$kind: collection
+description: Colección de Postman para interactuar con la API de usuarios y tokens en Laravel.
+variables:
+  base_url: http://127.0.0.1:8000

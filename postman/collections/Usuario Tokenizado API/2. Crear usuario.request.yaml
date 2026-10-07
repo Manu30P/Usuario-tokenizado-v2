@@ -1,0 +1,16 @@
+$kind: http-request
+description: Crea un nuevo usuario con la contraseña hasheada.
+url: "{{base_url}}/api/users"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Usuario Ejemplo",
+      "email": "usuario@example.com",
+      "password": "password123"
+    }
+order: 2000

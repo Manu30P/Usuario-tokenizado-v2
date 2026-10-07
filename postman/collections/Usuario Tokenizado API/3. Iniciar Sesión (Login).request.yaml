@@ -1,0 +1,15 @@
+$kind: http-request
+description: Verifica credenciales y retorna el token de sesión generado.
+url: "{{base_url}}/api/login"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: json
+  content: |-
+    {
+      "email": "usuario@example.com",
+      "password": "password123"
+    }
+order: 3000
